@@ -1,4 +1,4 @@
-from FacialAnalysisProcessor import FacialAnalysisProcessor
+from ProcessManager.FacialAnalysisProcessor import FacialAnalysisProcessor
 import time
 
 FacialAnalysisProcessor()
