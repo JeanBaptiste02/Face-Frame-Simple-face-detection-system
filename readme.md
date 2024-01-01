@@ -1,5 +1,4 @@
-# Face Frame - Photo Filters App
-
+# Face Frame - Basic Snap Studio
 Face Frame is a versatile desktop application that allows users to capture pictures with the added fun of applying various face filters. With a user-friendly interface, this application leverages the power of computer vision and image processing to enhance your photo-taking experience.
 
 ## Features
@@ -23,6 +22,10 @@ pip install opencv-python
 ```
 
 - [Tkinter](https://docs.python.org/3/library/tkinter.html) (usually included with Python installations)
+
+```bash
+pip install tk
+```
 
 - [Numpy](https://numpy.org/)
 
