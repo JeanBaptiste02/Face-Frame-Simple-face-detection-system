@@ -1,0 +1,20 @@
+version: '3'
+services:
+  face-frame:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    devices:
+      - /dev/video0:/dev/video0 
+    environment:
+      - DISPLAY=$DISPLAY 
+    depends_on:
+      - dependencies
+
+  dependencies:
+    image: python:3.10
+    command: /bin/true
+    volumes:
+      - ./app:/app
