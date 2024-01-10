@@ -33,7 +33,13 @@ pip install tk
 pip install numpy
 ```
 
-- [dlib](http://dlib.net/)
+- [dlib](http://dlib.net/)```bash
+pip install numpy
+```
+
+```bash
+pip install dlib
+```
 
 ## How to Run
 
