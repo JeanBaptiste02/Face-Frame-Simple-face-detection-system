@@ -35,7 +35,6 @@ pip install numpy
 
 - [dlib](http://dlib.net/)```bash
 pip install numpy
-```
 
 ```bash
 pip install dlib
