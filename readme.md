@@ -44,7 +44,17 @@ pip install dlib
 
 Execute the following command in your terminal to start the Face Frame application:
 
+Method 1 : Recommended (usual method)
+
 ```bash
 cd app
 python main.py
+```
+
+Method 2 : Docker
+
+```bash
+docker-compose build
+docker-compose up
+docker-compose down
 ```
