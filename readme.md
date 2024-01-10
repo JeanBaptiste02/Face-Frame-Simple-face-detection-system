@@ -1,15 +1,15 @@
 # Face Frame - Basic Snap Studio
-Face Frame is a versatile desktop application that allows users to capture pictures with the added fun of applying various face filters. With a user-friendly interface, this application leverages the power of computer vision and image processing to enhance your photo-taking experience.
+Face Frame is a very basic desktop application that has the features such as real-time face detection and age estimation. With a user-friendly interface and leveraging the capabilities of computer vision and image processing, this application makes capturing and enhancing photos a breeze.
 
 ## Features
 
-- **Live Face Filters:** Capture pictures in real-time with an array of dynamic face filters to add creativity to your photos.
+- Real-time Face Detection: Capture pictures with the added functionality of real-time face detection.
 
-- **User-Friendly Interface:** Intuitive design and easy navigation make Face Frame accessible for users of all levels.
+- Age Estimation: Capable to estimate user's age.
 
-- **OpenCV Integration:** Powered by OpenCV for efficient image processing and face detection.
+- User-Friendly Interface: The intuitive design and straightforward navigation make Face Frame accessible to users of all levels.
 
-- **Interactive Demo:** View a live demo showcasing the application in action.
+- OpenCV Integration: Powered by OpenCV for efficient image processing and reliable face detection.
 
 ## Required Packages
 
@@ -45,5 +45,6 @@ pip install dlib
 Execute the following command in your terminal to start the Face Frame application:
 
 ```bash
-python Faceapp.py
+cd app
+python main.py
 ```
