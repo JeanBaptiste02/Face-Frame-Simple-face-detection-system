@@ -1,15 +1,14 @@
-from ProcessManager.FacialAnalysisProcessor import FacialAnalysisProcessor
+from ProcessManager.WebcamManager import WebcamManager
 from ProcessManager.VideoCaptureManager import VideoCaptureManager
-from app.Webcam.WebcamManager import WebcamManager
 import time
 
+if __name__ == "__main__":
+    cam = WebcamManager(0).start()  # Start the webcam
 
-filters = ['glasses.png', 'sunglasses.png', 'sunglasses1.png', 'sunglasses2.png', \
-        'dog.png', 'rabbit.png','moustache.png', 'moustache1.png', 'ironman.png', 'capAmerica.png']
+    vcm = VideoCaptureManager(cam, 'Face Frame')
 
-vs = WebcamManager(0).start() #to start the webcam
+    vcm.initiate_video_streaming()
 
-FacialAnalysisProcessor()
+    time.sleep(60)  # will run for 60 sec
 
-fc = FacialAnalysisProcessor(filters)
-gui = VideoCaptureManager(vs,fc,'output')
+    vcm.stopped = True  # stop the video stream

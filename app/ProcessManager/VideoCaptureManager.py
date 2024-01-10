@@ -1,19 +1,29 @@
 import cv2
 import threading
-import time
 
+#GUI Manager
 class VideoCaptureManager:
-    def __init__(self):
-           return
+    def __init__(self, webcam_manager, window_name="Face Frame"):
+        self.webcam_manager = webcam_manager
+        self.stopped = False
+        self.window_name = window_name
 
     def initiate_video_streaming(self):
-        return
-    
+        threading.Thread(target=self.video_stream_update_loop, args=()).start()
+
     def video_stream_update_loop(self):
-        return
-    
-    def retrieve_current_video_frame(self):
-        return 
-    
+        while not self.stopped:
+            frame = self.webcam_manager.read_frame()
+            self.show_frame(frame)
+
+            if cv2.waitKey(1) & 0xFF == ord("q") | ord("w"):
+                self.stopped = True
+
+        self.terminate_video_stream()
+
+    def show_frame(self, frame):
+        cv2.imshow(self.window_name, frame)
+
     def terminate_video_stream(self):
-        return
+        cv2.destroyAllWindows()
+        self.webcam_manager.stop()
