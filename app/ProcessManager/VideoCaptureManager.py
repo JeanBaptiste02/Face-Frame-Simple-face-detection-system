@@ -16,7 +16,7 @@ class VideoCaptureManager:
             frame = self.webcam_manager.read_frame()
             self.show_frame(frame)
 
-            if cv2.waitKey(1) & 0xFF == ord("q") | ord("w"):
+            if cv2.waitKey(1) & 0xFF == ord("q"):
                 self.stopped = True
 
         self.terminate_video_stream()
