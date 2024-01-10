@@ -1,5 +1,5 @@
 # Face Frame - Basic Snap Studio
-Face Frame is a very basic desktop application that has the features such as real-time face detection and age estimation. With a user-friendly interface and leveraging the capabilities of computer vision and image processing, this application makes capturing and enhancing photos a breeze.
+Face Frame is a desktop application created with the primary goal of refreshing Python skills and gaining practical experience with camera libraries. This project focuses on real-time face detection and age estimation, serving as a hands-on exploration of Python programming and camera-related libraries.
 
 ## Features
 
